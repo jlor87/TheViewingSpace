@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-    <body>
+    <body id="viewpostbody">
+        <link href="style.css" rel="stylesheet" />
         <header>
                 <h1>View Post</h1>
         </header>
@@ -16,22 +17,22 @@
             </ul>
         </nav>
         <main>
-            <table>
-                <thead>
-                    <p>Name of Video</p>
-                </thead>
-                <tbody>
-                    <video controls width="400" height="300">
-                        <source src="" type="video/mp4">
-                    </video>
-                    <p>Author</p>
-                    <p>Creation Date</p>
-                </tbody>
-            </table>
+            <video controls>
+                <source src="" type="video/mp4">
+            </video>
+            <p class="videoclass" id="videoname">Name of Video</p>
+            <p class="videoclass">Author</p>
+            <p class="videoclass">Creation Date</p>
+            <div class="spacer"></div>
             <section>
-                <p>Comment Section</p>
+                <p class="comments"><u>Comments</u></p>
+                <p class="comments">User1: First comment!</p>
+                <p class="comments">User2: Love it!</p>
+                <p class="comments">User3: Terrible, I hate it</p>
             </section>
         </main>
-        <footer>Joshua Lor &copy; 2023</footer>    
+        <footer>
+            <div>Joshua Lor &copy; 2023</div>
+        </footer>
     </body>
 </html>

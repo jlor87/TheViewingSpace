@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-    <body>
+    <link href="style.css" rel="stylesheet" />
+    <body id="registrationbody">
         <header>
             <h1>Registration</h1>
         </header>
@@ -17,7 +18,7 @@
         </nav>
         <main>
             <section>
-                <p>Please register using the form below.</p>
+                <p>Please register using the form below:</p>
             </section>
             <form>
                 <label for="username">Username</label>
@@ -28,11 +29,14 @@
                 <input type="password" id="password" name="password"/>
                 <label for="password2">Confirm Password</label>
                 <input type="password" id="password2" name="password"/>
+                <div class="spacer"></div>
                 <p>Please read our Terms of Service and Privacy Rules before completing registration.</p>
-                <a href="">TOS and Privacy Rules</a>
+                <a href="" class="toslink">TOS and Privacy Rules</a>
                 <input type="submit"/>
             </form>
         </main>
-        <footer>Joshua Lor &copy; 2023</footer>    
+        <footer>
+            <div>Joshua Lor &copy; 2023</div>
+        </footer>    
     </body>
 </html>

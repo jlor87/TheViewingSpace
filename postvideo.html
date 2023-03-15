@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-    <body>
+    <link href="style.css" rel="stylesheet" />
+    <body id="postvideobody">
         <header>
             <h1>Post Video</h1>
         </header>
@@ -17,21 +18,24 @@
         </nav>
         <main>
                 <header>
-                    <h3>Upload Your Video:<h3>
+                    <h3 id="dramaticheading"><u>Show The World What It's Been Waiting For.</u>
                 </header>
                 <section>
                     <form>
-                        <label for="videotitle">Video Title</label>
-                        <input type="text" id="videotitle" name="videotitle"/>
-                        <label for="videodesc">Description</label>
-                        <input type="text" id="videodesc" name="videodesc"/>
-                        <input type="file"/>
+                        <label for="videotitle" >Enter video title:</label>
+                        <input type="text" id="videotitle" name="videotitle" class = "uploadformcontent"/>
+                        <label for="videodesc">Description:</label>
+                        <input type="text" id="videodesc" name="videodesc" class = "uploadformcontent"/>
+                        <input type="file" id="uploadfile" class = "uploadformcontent">
                         <p>Please read our Terms of Service and Privacy Rules before uploading.</p>
-                        <a href="">TOS and Privacy Rules</a>
+                        <a class="toslink" href="">TOS and Privacy Rules</a>
                         <input type="submit"/>
                     </form>
+                    <div class="spacer"></div>
                 </section>
         </main>
-        <footer>Joshua Lor &copy; 2023</footer>    
+        <footer>
+            <div>Joshua Lor &copy; 2023</div>
+        </footer>   
     </body>
 </html>

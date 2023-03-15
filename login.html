@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-    <body>
+    <link href="style.css" rel="stylesheet" />
+    <body id="loginbody">
         <header>
             <h1>Login</h1>
         </header>
@@ -17,16 +18,19 @@
         </nav>
         <main>
             <section>
-                <p>Please log in using the form below.</p>
+                <p>Log in using the form below.</p>
             </section>
             <form>
                 <label for="username">Username</label>
                 <input type="username" id="username" name="username"/>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password"/>
-                <input type="submit"/>
+                <input id="loginsubmit" class="no-outline" type="submit"/>
             </form>
+            <div class="spacer"></div>
         </main>
-        <footer>Joshua Lor &copy; 2023</footer>    
+        <footer>
+            <div>Joshua Lor &copy; 2023</div>
+        </footer>    
     </body>
 </html>
