@@ -1,0 +1,65 @@
+head {
+    background-color: rgb(137, 214, 240);
+}
+
+body {
+    background-color: rgb(137, 214, 240);
+}
+
+nav {
+    background-color: rgb(137, 214, 240);
+}
+
+main {
+    background-color: rgb(137, 214, 240);
+}
+
+header {
+    background-color: rgb(137, 214, 240);
+}
+
+section {
+    background-color: rgb(137, 214, 240);
+}
+
+footer {
+    background-color: rgb(137, 214, 240);
+}
+  
+h1 {
+    width: (of an element);
+    text-align: center;
+    /*background-color, the color behind an element's content and padding.
+    /color, the color of an element's content (usually text).
+    /text-shadow sets a drop shadow on the text inside an element.
+    /display sets the display mode of an element. (keep reading to learn more)
+    height
+    width
+    padding
+    border
+    margin
+    */
+}
+  
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+/* Mobile view */
+@media screen and (min-width: 500px) {
+    main {
+        flex: 1 100%;
+        flex-direction: row;
+    }
+}
+
+/* Tablet view */
+@media screen and (min-width: 800px) {
+    
+}
+
+/* Desktop view */
+@media screen and (min-width: 800px) {
+    
+}
