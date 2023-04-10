@@ -9,7 +9,7 @@ a:link, a:visited {
 
 a:hover {
     color: crimson;
-    transition: all 350ms ease;
+    transition: all 300ms ease;
 }
 
 body {
@@ -28,13 +28,14 @@ body {
 
 div {
     display: grid;
-    position: relative;
     left: 0;
     top: 80px;
+    opacity: 1;
 }
 
 footer {
-    height: 100px;
+    display: grid;
+    grid-template-rows: min-content;
     position: relative;
     bottom: 0;
     left: 0;
@@ -52,6 +53,10 @@ h1 {
 header {
     display: grid;
     justify-content: center;
+}
+
+img {
+    opacity: 1;
 }
 
 input {
@@ -96,33 +101,108 @@ ul {
     text-align: left;
 }
 
+.checkbox{
+    justify-self: left;
+}
+
 .comments{
     text-align: left;
     height: 0px;
 }
 
-.spacer{
-    height: 40px;
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
 }
 
-.toslink{
-    padding-bottom: 8px;
+
+
+.minispacer{
+    height: 12px;
+}
+
+.spacer{
+    height: 36px;
 }
 
 .uploadformcontent {
     margin: 4px;
 }
 
+.toslink{
+    padding-left: 6px;
+}
+
+.videoBlock{
+    display: grid;
+    justify-items: center;
+    grid-template-rows: fit-content(200px) fit-content(150px);
+}
+
 .videoclass{
     height: 0px;
+}
+
+.videoThumbnail:hover{
+    outline: 1px solid red;
 }
 
 #dramaticheading {
     height: 50px;
 }
 
+#indexContainer{
+    grid-area: contentArea;
+    display: grid;
+    grid-template-rows: fit-content(200px);
+    grid-template-columns: auto;
+    gap: 20px;
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#indexContentHeader{
+    grid-area: header;
+}
+
 #indexbody {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-columns: fit-content(200px) 1fr;
+    grid-template-areas:
+    "header header"
+    "leftSideBar mainContent"
+    "footer footer";
     background-image: url("../csc317-code-jlor87/Index.jpg");
+    background-attachment: fixed;
+}
+
+#indexHeader{
+    grid-area: header;
+    
+}
+
+#indexNavBar{
+    grid-area: leftSideBar;
+}
+
+#indexMainContent{
+    grid-area: mainContent;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "contentArea";
+    grid-template-rows: min-content;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+#indexFooter{
+    grid-area: footer;
 }
 
 #loginbody{
@@ -176,22 +256,4 @@ ul {
 
 #viewpostbody{
     background-image: url("../csc317-code-jlor87/View\ Post.jpg");
-}
-
-/* Mobile view */
-@media screen and (min-width: 500px) {
-    main {
-        flex: 1 100%;
-        flex-direction: row;
-    }
-}
-
-/* Tablet view */
-@media screen and (min-width: 800px) {
-    
-}
-
-/* Desktop view */
-@media screen and (min-width: 800px) {
-    
 }
