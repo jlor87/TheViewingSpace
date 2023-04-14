@@ -177,7 +177,7 @@ ul {
     "header header"
     "leftSideBar mainContent"
     "footer footer";
-    background-image: url("../csc317-code-jlor87/Index.jpg");
+    background-image: url("../pic/Index.jpg");
     background-attachment: fixed;
 }
 
@@ -206,7 +206,7 @@ ul {
 }
 
 #loginbody{
-    background-image: url("../csc317-code-jlor87/Login2.jpg");
+    background-image: url("../pic/Login2.jpg");
 }
 
 #loginsubmit {
@@ -226,17 +226,17 @@ ul {
 }
 
 #postvideobody{
-    background-image: url("../csc317-code-jlor87/Post\ Video.jpg");
+    background-image: url("../pic/Post\ Video.jpg");
     background-position: left center;
 }
 
 #profilebody{
-    background-image: url("../csc317-code-jlor87/View\ Profile.jpg");
+    background-image: url("../pic/View\ Profile.jpg");
     background-repeat: no-repeat;
 }
 
 #registrationbody{
-    background-image: url("../csc317-code-jlor87/Register.jpg");
+    background-image: url("../pic/Register.jpg");
 }
 
 #uploadfile {
@@ -255,5 +255,5 @@ ul {
 }
 
 #viewpostbody{
-    background-image: url("../csc317-code-jlor87/View\ Post.jpg");
+    background-image: url("../pic/View\ Post.jpg");
 }
