@@ -11,7 +11,7 @@ async function fetchFromAPI(){
         videoCount = Object.keys(data).length;
         var htmlString = data.reduce(function (preview, Object){
             return (
-                preview + `<div class="videoBlock" style="opacity: 1;">
+                preview + `<div class="videoCard" style="opacity: 1;">
                     <img class="videoThumbnail" width="200" height="150" src="${Object.url}">
                     <p class="videoTitle">${Object.title}</p></div>`
                 );
@@ -19,13 +19,13 @@ async function fetchFromAPI(){
         document.getElementById("indexContainer").innerHTML = htmlString;
         document.getElementById("videoResults").innerHTML = "Featured Videos: " + videoCount;
         
-        let specificVideos = document.getElementsByClassName("videoBlock");
+        let specificVideos = document.getElementsByClassName("videoCard");
             [...specificVideos].forEach(function (ele){  
                 ele.addEventListener("click", function(ev){
                     fadeOut(ele);
                     setTimeout(function(){
                         ele.remove();
-                        videoCount = document.getElementsByClassName("videoBlock").length
+                        videoCount = document.getElementsByClassName("videoCard").length
                         document.getElementById("videoResults").innerHTML = "Featured Videos: " + videoCount;
                     }, 450)
                 })
