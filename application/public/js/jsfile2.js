@@ -45,6 +45,8 @@ function fadeOut(element) {
     setTimeout(function(){
         clearInterval(fade);
     }, 500)
- }
+}
+
+
 
 fetchFromAPI();
