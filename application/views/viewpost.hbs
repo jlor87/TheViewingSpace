@@ -6,8 +6,12 @@
                 <h1>View Post</h1>
         </header>
         <main>
-            {{>videoBlock}}
-            {{>commentSection}}
+            {{#each videoPost}}
+                {{>videoBlock}}
+            {{/each}}
+                {{#if isLoggedIn}}
+                    {{>commentSection}}
+                {{/if}}
         </main>
     </body>
 </html>

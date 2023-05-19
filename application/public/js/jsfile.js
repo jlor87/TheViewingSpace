@@ -38,10 +38,8 @@ document.getElementById("username").addEventListener('input', function(event){
     var usernameStatus = document.getElementById("username");
     if(isAlpha(firstChar) && alphaNumCount(username) >= 3) {
         usernameCorrect = true;
-        console.log('Username is valid');
         usernameStatus.style.outline = "2px solid #66FF00";
     } else {
-        console.log('Username must start with a letter and contain 3 or more alphanumeric characters.');
         usernameStatus.style.outline = "2px solid red";
     }
 })
@@ -88,14 +86,12 @@ document.getElementById("password").addEventListener('input', function(event){
 
     var passwordStatus = document.getElementById("password");
     if(passwordCheck(password)){
-        console.log("Valid password");
         globalPassword = password;
         console.log(globalPassword);
         passwordCorrect = true;
         passwordStatus.style.outline = "2px solid #66FF00";
     } else {
         passwordStatus.style.outline = "2px solid red";
-        console.log("Invalid password. Password must contain 8 or more characters, at least 1 uppercase letter, 1 number, and 1 of the following special characters: / * - + ! @ # $ ^ & ~ [ ]");
     }
 })
 
@@ -106,12 +102,10 @@ document.getElementById("password2").addEventListener('input', function(event){
 
     var matchingPassword = document.getElementById("password2");
     if(confirmPassword == globalPassword){
-        console.log("Passwords match.");
         confirmPasswordCorrect = true;
         matchingPassword.style.outline = "2px solid #66FF00";
     } else {
         matchingPassword.style.outline = "2px solid red";
-        console.log("Passwords must match!");
     }
 })
 
@@ -123,23 +117,19 @@ function validateEmail(email){
     }
     else{
         return false;
-
     }
 }
 
 document.getElementById("email").addEventListener('input', function(event){
     let userInput = event.currentTarget;
-    let email = userInput.value;
-    console.log(email);
-    let valid = validateEmail(email);
+    let emailInput = userInput.value;
+    let valid = validateEmail(emailInput);
 
     var emailStatus = document.getElementById("email");
     if(valid){
-        console.log("Valid email");
         emailValid = true;
         emailStatus.style.outline = "2px solid #66FF00";
     } else {
-        console.log("Invalid email");
         emailValid = false;
         emailStatus.style.outline = "2px solid red";
     }
@@ -150,7 +140,6 @@ document.getElementById("ageCheckBox").addEventListener('change', function(ev) {
     let checkAge = ev.currentTarget;
     if(checkAge.checked){
             ageAbove13 = true;
-            console.log("User is above 13.");
     } else {
             ageAbove13 = false;
     }
@@ -160,23 +149,7 @@ document.getElementById("tosCheckBox").addEventListener('change', function(ev) {
     let agreeWithTOS = ev.currentTarget;
     if(agreeWithTOS.checked){
             readTOS = true;
-            console.log("User has read TOS.");
     } else {
             readTOS = false;
     }
 });
-
-
-document.getElementById("registrationform").addEventListener("submit", function(ev){
-    if (usernameCorrect && emailValid && 
-        passwordCorrect && confirmPasswordCorrect &&
-        ageAbove13 && readTOS){
-            allConditionsPass = true;
-            console.log("All conditions true.");
-    }
-    if(allConditionsPass){
-        ev.currentTarget.submit();
-    } else{
-        ev.preventDefault();
-    }
-})

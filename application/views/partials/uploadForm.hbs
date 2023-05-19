@@ -1,11 +1,11 @@
-<form id="uploadForm">
+<form id="uploadForm" action="/posts/create" method="POST" enctype="multipart/form-data">
     <u id="dramaticheading">Show The World What It's Been Waiting For.</u>
     <label for="videotitle" >Enter video title:</label>
     <input type="text" id="videotitle" name="videotitle" class = "uploadformcontent"/>
     <label for="videodesc">Description:</label>
     <input type="text" id="videodesc" name="videodesc" class = "uploadformcontent"/>
-    <input type="file" id="uploadfile" class = "uploadformcontent">
+    <input type="file" id="uploadfile" name="videofile" class = "uploadformcontent" required>
     <label class="container"><input type="checkbox" class="checkbox" required>I am 13+ years of age.</a></label>
     <label class="container"><input type="checkbox" class="checkbox" required>I have read the <a href="" class="toslink"> Terms of Service and Privacy Rules.</a></label>
-    <input type="submit"/>
+    <input type="submit" value="Submit"/>
 </form>

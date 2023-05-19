@@ -6,13 +6,30 @@
             <h1>View Profile</h1>
         </header>
         <main id="profileMainContent">
-                <header>
+                <header id="profileHeader">
                     <h2>{{username}}
+                    <h4>{{email}}</h4>
+
+                    {{#if deletePost}}
+                        <p>Warning! You have chosen to delete a post!</p>
+                        <h5>Select A Post:</h5>
+                    {{else}}
+                        <a href="/posts/delete/{{user.userId}}">Delete A Post</a>
+                        <h5>Uploaded Videos:</h5>
+                    {{/if}} 
+
                 </header>
-                <caption>
-                    <p>Email: {{email}}</p>
-                </caption>
-                {{>commentSection}}
+                <div id="displayVideos">
+                    {{#if deletePost}}
+                        {{#each recentPosts}}
+                            {{>videoCardDelete}}
+                        {{/each}}
+                    {{else}}
+                        {{#each recentPosts}}
+                            {{>videoCard}}
+                        {{/each}}
+                    {{/if}}
+                </div>
         </main> 
     </body>
 </html>

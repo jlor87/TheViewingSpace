@@ -1,4 +1,4 @@
-var url = "https://jsonplaceholder.typicode.com/albums/2/photos";
+/*var url = "https://jsonplaceholder.typicode.com/albums/2/photos";
 var videoCount = 0;
 
 async function fetchFromAPI(){
@@ -12,7 +12,7 @@ async function fetchFromAPI(){
         var htmlString = data.reduce(function (preview, Object){
             return (
                 preview + `<div class="videoCard" style="opacity: 1;">
-                    <img class="videoThumbnail" width="200" height="150" src="${Object.url}">
+                    <img class="videoThumbnail" width="200" height="200" src="${Object.url}">
                     <p class="videoTitle">${Object.title}</p></div>`
                 );
             }, "");
@@ -49,4 +49,4 @@ function fadeOut(element) {
 
 
 
-fetchFromAPI();
+fetchFromAPI();*/

@@ -4,13 +4,16 @@
     <body id="indexbody">
         <header class="allHeaders">
             <h1>the viewing space</h1>
-            <summary>the haven for aesthetic videographers </summary>
+            <summary>the haven for aesthetic videographers</summary>
         </header>
         <main id="indexMainContent">
                 <header id="indexContentHeader">
-                    <h3 id="videoResults">Featured Videos:
+                    <h3>{{title}}</h3>
                 </header>
-                <div id="indexContainer">
+                <div id="displayVideos">
+                    {{#each recentPosts}}
+                        {{>videoCard}}
+                    {{/each}}
                 </div>
         </main>
     </body>

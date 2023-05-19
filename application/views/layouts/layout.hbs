@@ -3,11 +3,12 @@
   {{>header}}
     <body>
       {{{header}}}
-      {{#if (checkIfLoggedIn)}}
-        {{> loggedInNavBar}}
-      {{else}}
-        {{> navbar}}
-      {{/if}}
+      {{> flashmessage}}
+        {{#if isLoggedIn}}
+          {{> loggedInNavBar}}
+        {{else}}
+          {{> navbar}}
+        {{/if}}
       {{{body}}}
       {{> footer}}
     </body>

@@ -1,9 +1,9 @@
 <nav id="indexNavBar">
     <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/profile">My Profile</a></li>
-        <li><a href="/viewpost">Watch Videos</a></li>
-        <li><a href="/postvideo">Upload a Video</a></li>
-        <li><a href="/logout" action="/index/logout" method="GET" name="logOut" enctype="application/x-www-form-urlencoded">Logout</a></li>
+        <li><a href="/users/profile/{{user.userId}}" action="/users/profile" method="GET" enctype="application/x-www-form-urlencoded">My Profile</a></li>
+        <li><a href="/users/postvideo" action="/users/postvideo" method="GET" enctype="application/x-www-form-urlencoded">Upload a Video</a></li>
+        <li><a href="/users/logout" action="/users/logout" method="GET" enctype="application/x-www-form-urlencoded">Logout</a></li>
+        {{>searchForm}}
     </ul>
 </nav>

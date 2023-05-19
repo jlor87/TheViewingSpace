@@ -1,8 +1,9 @@
 <div class="videoBlock">
-    <video controls id="video">
-        <source src="" type="video/mp4">
+    <p id="videoName"><b>{{this.title}}</b></p>
+    <video controls id="video" height="400" width="600">
+        <source src="/{{this.video}}" type="video/mp4">
     </video>
-    <p id="videoName">Name of Video</p>
-    <p id="author">Author</p>
-    <p id="creationDate">Creation Date</p>
+    <p id="author">Creator: {{this.username}}</p>
+    <p id="description">{{this.description}}</p>
+    <p id="creationDate">Created on: {{formatDateString this.createdAt}}</p>
 </div>
