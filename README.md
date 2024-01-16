@@ -6,5 +6,4 @@ By Joshua Lor
 Contact Email: joshualor@yahoo.com
 
 **Database Used**
-MySQL Community Server 8.3
-MySQL Workbench 8.0
+MySQL Community Server 8.3, MySQL Workbench 8.0
