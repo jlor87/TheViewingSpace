@@ -1,27 +1,10 @@
-# CSC 317 Course Project
+**TheViewingSpace**
 
-## Purpose
+A YouTube-inspired, video-hosting web application developed using NodeJS/ExpressJS and JavaScript, HTML, and CSS.
 
-The purpose of this repository is to store all the code for your web application. This also includes the history of all commits made and who made them. Only code submitted on the master branch will be graded.
+By Joshua Lor
+Contact Email: joshualor@yahoo.com
 
-Please follow the instructions below and fill in the information requested when prompted.
-
-## Student Information
-
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | Joshua Lor    |
-| Student ID    | 922353156     |
-| Student Email | jlor@sfsu.edu |
-
-
-
-# Build/Run Instructions
-
-## Build Instructions
-1. steps here
-2. steps here
-
-## Run Instructions
-1. steps here
-2. steps here 
+**Database Used**
+MySQL Community Server 8.3
+MySQL Workbench 8.0
